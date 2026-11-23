@@ -9,6 +9,8 @@ async function fetchForecast(lat, lon) {
     latitude: lat,
     longitude: lon,
     current: FORECAST_FIELDS,
+    daily: 'weather_code,temperature_2m_max,temperature_2m_min',
+    forecast_days: '6',
     temperature_unit: 'fahrenheit',
     wind_speed_unit: 'mph',
     precipitation_unit: 'inch',
